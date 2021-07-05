@@ -1,0 +1,206 @@
+
+    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body{
+      background-color:rgb(245, 241, 243);
+      font-family: 'Times New Roman', Times, serif;
+      color: #6a5e58;
+      
+    }
+   .nav{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(218, 179, 179);
+    }
+    .nav ol > li {
+      float: right;
+      list-style: none;
+    
+    }
+    
+   .nav ol > li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .nav ol li a:hover{
+      color: #4d0719;
+
+    }
+    
+    .title{
+      text-align: center;
+      font-size: 30px;
+      margin-left: 25px;
+      margin-bottom: 50px;
+      margin-top: 10px;
+    }
+       
+   /* primer cuadro galeria(fotos pizza, noticias, ingrediente) */
+    .galeria{
+    max-width: 1250px;
+  margin:auto;
+  overflow: hidden;
+   }
+    .galeria .imagenes{
+   width: 710px;
+   padding: auto;
+   border-color: rgb(238, 153, 189);
+ border-style: groove;
+   margin-left: 80px;
+   }
+
+  .galeria .imagenes img{
+    width: 350px;
+    margin: auto;
+    padding: auto;
+
+  }
+  .galeria .imagenes img:hover{
+    filter: saturate(180%);
+ }
+ .ing1{
+  width: 25%;
+  text-align: justify;
+  position:absolute;
+  right: 150px;
+  top: 120px;
+  padding: auto;
+  margin-top: 10px;
+ }
+
+.noticias{
+width: 25%;
+text-align: justify;
+position:absolute;
+right: 150px;
+bottom:170px ;
+padding: auto;
+
+
+} 
+.noticias ul li a{
+  color: #4d0719;
+}
+
+/* titulos*/
+  h2{
+    text-align: center;
+  }
+  h3,h4,h5{
+    text-align: center;
+  }
+  h4, h5{
+    font-size: 20px;
+  }
+
+ 
+  /*procedimiento para elaboracion */
+  .contenedor{
+      margin-top: 30px;
+  }
+ 
+    .procedimiento{
+      width: 70%;
+      max-width: 1,000px;
+      margin: auto;
+      background-color: #ffffff;
+    }
+    .procedimiento p{
+      margin-right: 50px;
+      line-height: 25px;
+      text-align: justify;
+    }
+   .procedimiento img{
+     float: left;
+     width: 250px;
+     height: 250px;
+     margin-right: 10px;
+     border-radius:50%;
+     box-shadow: 0px 0px 15px 15px #ac7188;
+
+}
+
+
+/* video de elaboracion */
+    #video{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  /* galeria 2*/
+    .galeriapas {
+      max-width: 1250px;
+    margin:auto;
+      padding-bottom: auto;
+    height: 415px;
+     }
+      .galeriapas .imagenespas{
+     width: 710px;
+     padding: auto;
+     border-color:  rgb(238, 153, 189);
+     border-style: groove;
+     margin-left: 80px;
+     }
+  
+    .galeriapas .imagenespas img{
+      width: 350px;
+      margin: auto;
+      padding: auto;
+  
+    }
+    .galeriapas .imagenespas img:hover{
+      filter: saturate(180%);
+   }
+  .galeriapas  .ingpas{
+    width: 25%;
+    text-align: justify;
+    padding: auto;
+   position: relative;
+   bottom: 415px;
+   left: 810px;
+
+   }
+  
+ .galeriapas  .noticiaspas{
+  width: 25%;
+  text-align: justify;
+  padding: auto;
+  position:relative;
+  bottom: 410px;
+  left: 810px;
+  font-size: 16px;
+ }  
+
+ .noticiaspas ul li a{
+  color: #4d0719;
+ 
+  }
+
+
+    /* final */
+    footer {
+  margin-top: 30px;
+  background-color: rosybrown;
+  padding: 10px;
+}
+footer > span {
+  margin-top: 1px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: white;
+}
+    
+
