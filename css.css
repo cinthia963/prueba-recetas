@@ -7,17 +7,17 @@
     }
     
     body{
-      background-color:rgb(245, 241, 243);
+      background-color:#D4D3DD;
       font-family: 'Times New Roman', Times, serif;
-      color: #6a5e58;
       
     }
    .nav{
+     width: 100%;
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: rgb(218, 179, 179);
+      background-color: #dae2f8;
     }
     .nav ol > li {
       float: right;
@@ -27,7 +27,7 @@
     
    .nav ol > li a {
       display: block;
-      color: white;
+      color: black;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -47,74 +47,104 @@
     }
        
    /* primer cuadro galeria(fotos pizza, noticias, ingrediente) */
-    .galeria{
-    max-width: 1250px;
-  margin:auto;
-  overflow: hidden;
-   }
-    .galeria .imagenes{
-   width: 710px;
-   padding: auto;
-   border-color: rgb(238, 153, 189);
- border-style: groove;
-   margin-left: 80px;
-   }
-
-  .galeria .imagenes img{
-    width: 350px;
-    margin: auto;
-    padding: auto;
-
-  }
-  .galeria .imagenes img:hover{
-    filter: saturate(180%);
+  .galeria{
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
  }
- .ing1{
-  width: 25%;
-  text-align: justify;
-  position:absolute;
-  right: 150px;
-  top: 120px;
-  padding: auto;
-  margin-top: 10px;
+ .galeria h2{
+   margin-top: 10px;
+   font-size: 22px;
+   text-align: center;
  }
-
-.noticias{
-width: 25%;
-text-align: justify;
-position:absolute;
-right: 150px;
-bottom:170px ;
-padding: auto;
-
-
-} 
-.noticias ul li a{
-  color: #4d0719;
+ 
+.contenedor-princ{
+  display: flex;
+  max-width: 70%;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  align-items: center;
 }
 
-/* titulos*/
-  h2{
-    text-align: center;
-  }
-  h3,h4,h5{
-    text-align: center;
-  }
-  h4, h5{
-    font-size: 20px;
-  }
+.img-galery{
+  width: 50%;
+}
+.img-galery img{
+  width: 450px;
+  height: 350px;
+}
+.img-galery img:hover{
+  filter: saturate(180%);
+}
+.tablas{
+  width: 50%;
+  text-align: center;
+}
+.tablas:hover{
+  background-color:  #EFEFBB;;
+  color:black;
+}
 
- 
+  .ing1 ul li{
+   list-style: none;
+ }
+ .tablas h3{
+   font-size: 20px;
+   text-align: center;
+   margin-bottom: 12px;
+
+ }
+
+  .noticias ul li{
+   list-style: none;
+ }
+ .noticias a{
+  text-decoration: none;
+  color:cadetblue;
+ }
+ @media (max-width: 1220px){
+   .contenedor-princ{
+     width: 70%;
+     display: flex;
+     flex-direction: column;
+   }
+   .img-galery{
+     width: 60%;
+   }
+ }
+
+ @media (max-width: 995px){
+   .contenedor-princ{
+     text-align: center;
+   }
+   .img-galery{
+    width: 70%;
+   }
+ }
+ @media (max-width: 995px){
+   .img-galery{
+     width: 80%;
+   }
+  }
+  @media (max-width: 665px){
+    .img-galery{
+      width: 100%;
+    }
+  }
   /*procedimiento para elaboracion */
   .contenedor{
-      margin-top: 30px;
+    margin: auto;
+      background: #EFEFBB;  
   }
  
     .procedimiento{
       width: 70%;
       max-width: 1,000px;
       margin: auto;
-      background-color: #ffffff;
+      background-color: #EFEFBB;;
     }
     .procedimiento p{
       margin-right: 50px;
@@ -138,19 +168,22 @@ padding: auto;
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
+      background-color: #D4D3DD;
     }
   /* galeria 2*/
     .galeriapas {
-      max-width: 1250px;
-    margin:auto;
-      padding-bottom: auto;
-    height: 415px;
+      display: flex;
+      max-width: 100%;
+      margin-top: 100px;
+      margin-right: auto;
+      margin-bottom: 100px;
+      margin-left: auto;
+      align-items: center;
+      justify-content: center;
      }
       .galeriapas .imagenespas{
      width: 710px;
      padding: auto;
-     border-color:  rgb(238, 153, 189);
-     border-style: groove;
      margin-left: 80px;
      }
   
@@ -163,36 +196,63 @@ padding: auto;
     .galeriapas .imagenespas img:hover{
       filter: saturate(180%);
    }
-  .galeriapas  .ingpas{
-    width: 25%;
+   .container{
+     width: 25%;
+     margin-left: 5px;
+   }
+   .ingpas{
+     background-color:  #EFEFBB;;
+   }
+   .ingpas ul li{
     text-align: justify;
-    padding: auto;
-   position: relative;
-   bottom: 415px;
-   left: 810px;
-
+    list-style: none;
+   
+   }
+   .ingpas h4{
+     text-align: center;
+     margin-bottom: 5px;
+     font-size: 20px;
+   }
+   .noticiaspas{
+     background-color:  #EFEFBB;;
+   }
+   .noticiaspas ul li{
+     list-style: none;
    }
   
- .galeriapas  .noticiaspas{
-  width: 25%;
+  .noticiaspas a{
   text-align: justify;
-  padding: auto;
-  position:relative;
-  bottom: 410px;
-  left: 810px;
-  font-size: 16px;
- }  
+  text-decoration: none;
 
- .noticiaspas ul li a{
-  color: #4d0719;
- 
+ }
+ .noticiaspas h5{
+   text-align: center;
+   margin-bottom: 5px;
+   font-size: 20px;
+ }
+ @media (max-width: 1115px){
+  .galeriapas{
+    display: flex;
+    flex-direction: column;
   }
+ }
+ @media (max-width: 780px){
+  .imagenespas{
+    width: 500px;
 
+  }
+ }
+ @media (max-width: 650px){
+  .imagenespas{
+    width: 300px;
+
+  }
+ }
 
     /* final */
-    footer {
+ footer {
   margin-top: 30px;
-  background-color: rosybrown;
+  background-color: #dae2f8;
   padding: 10px;
 }
 footer > span {
@@ -200,7 +260,7 @@ footer > span {
   display: flex;
   justify-content: flex-end;
   font-size: 0.9em;
-  color: white;
+  color: black;
 }
     
 
