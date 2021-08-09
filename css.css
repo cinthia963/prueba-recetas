@@ -7,7 +7,7 @@
     }
     
     body{
-      background-color:#D4D3DD;
+      background-color:#dae2f8;
       font-family: 'Times New Roman', Times, serif;
       
     }
@@ -35,6 +35,7 @@
 
     .nav ol li a:hover{
       color: #4d0719;
+      background-color: #EFEFBB;
 
     }
     
@@ -137,14 +138,14 @@
   /*procedimiento para elaboracion */
   .contenedor{
     margin: auto;
-      background: #EFEFBB;  
+      background-color: #dae2f8;
   }
  
     .procedimiento{
       width: 70%;
       max-width: 1,000px;
       margin: auto;
-      background-color: #EFEFBB;;
+      background-color: #D4D3DD;
     }
     .procedimiento p{
       margin-right: 50px;
@@ -168,7 +169,7 @@
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
-      background-color: #D4D3DD;
+      background-color: #dae2f8;
     }
   /* galeria 2*/
     .galeriapas {
